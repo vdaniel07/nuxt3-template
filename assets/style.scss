@@ -1,0 +1,179 @@
+/* --- Global */
+html {
+  overflow-y: auto !important;
+}
+
+/* Base colors*/
+/* success: '#4CAF50' */
+/* warning: '#FB8C00' */
+/* error: '#B00020' */
+/* info: '#2196F3' */
+
+.cell {
+  height: 100%;
+  padding-left: 5px;
+  display: flex;
+  /*this centers the text horizontally*/
+  /* justify-content: center; */
+  /*this centers the text vertically*/
+  align-items: center;
+}
+
+.bgError {
+  background-color: rgba(176, 0, 32, 0.5);
+}
+.bgWarning {
+  background-color: rgba(241, 150, 0, 0.5);
+}
+.bgSuccess {
+  background-color: rgba(76, 175, 80, 0.5);
+}
+
+.v-data-table__td {
+  font-size: 12px !important;
+  padding: 0 2px !important;
+}
+
+/* --- Button */
+.v-btn {
+  font-weight: 700 !important;
+}
+
+/* --- Navigation drawer */
+.v-list-item__spacer {
+  width: 16px !important;
+}
+
+/* --- Card */
+.v-theme--light .v-card-item {
+  background-color: rgba(var(--v-theme-primary), 1);
+  /* background-color: rgba(var(--v-theme-primary), 0.9); */
+  /* background: linear-gradient(45deg, #073a7c 0%, #1767ad 60%, #255b8e 100%); */
+  color: white;
+}
+.v-theme--dark .v-card-item {
+  background-color: rgba(var(--v-theme-primary), 0.7);
+  /* background: linear-gradient(45deg, #073a7c 0%, #1767ad 60%, #255b8e 100%); */
+  /* background-color: rgba(var(--v-theme-primary), 0.8); */
+  color: white;
+  /* background-color: #214059; */
+  /* background-color: #3d627f; */
+  /* background-color: #39566c; */
+}
+
+.v-card-title {
+  font-size: 18px !important;
+}
+
+.v-card-item {
+  padding: 8px 16px !important;
+}
+
+.v-dialog > .v-overlay__content > .v-card > .v-card-item {
+  padding: 10px 16px !important;
+}
+
+.v-list-item--active > .v-list-item__overlay {
+  opacity: 0 !important;
+}
+
+.v-theme--light .bg-menu {
+  background-color: rgba(var(--v-theme-primary), 1) !important;
+  color: rgb(var(--v-theme-on-primary)) !important;
+}
+
+.v-theme--dark .bg-menu {
+  background-color: rgba(var(--v-theme-primary), 0.7) !important;
+  color: rgb(var(--v-theme-on-primary)) !important;
+}
+
+.v-input,
+.v-input .v-label,
+.v-text-field__prefix,
+.v-file-input__text,
+input {
+  font-size: 16px;
+  @media only screen and (min-width: 600px) {
+    font-size: 12px;
+  }
+  @media only screen and (min-width: 960px) {
+    font-size: 14px;
+  }
+  @media only screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.back-green {
+  color: white !important;
+  background: #4caf50b3 !important;
+  background: radial-gradient(circle, rgba(76, 175, 80, 0.7) 0%, rgba(60, 143, 62, 0.7) 100%) !important;
+}
+.back-green:hover {
+  background: radial-gradient(circle, rgba(60, 143, 62, 0.7) 0%, rgba(76, 175, 80, 0.7) 100%) !important;
+}
+
+.back-blue {
+  color: white !important;
+  background: #4c87c6 !important;
+  background: radial-gradient(circle, rgba(93, 156, 223, 1) 0%, rgba(76, 135, 198, 1) 100%) !important;
+}
+.back-blue:hover {
+  background: radial-gradient(circle, rgba(76, 135, 198, 1) 0%, rgba(93, 156, 223, 1) 100%) !important;
+}
+
+.back-grey {
+  color: white !important;
+  background: #546e7a !important;
+  background: radial-gradient(circle, #78909c 0%, #546e7a 100%) !important;
+}
+.back-grey:hover {
+  background: radial-gradient(circle, #546e7a 0%, #78909c 100%) !important;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.pointer-events-initial {
+  pointer-events: initial;
+}
+
+.v-stepper-item {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.v-stepper-window {
+  min-height: 515px;
+  margin-bottom: 8px !important;
+}
+
+.hintWarning {
+  .v-messages__message {
+    color: #fb8c00 !important;
+  }
+}
+
+.v-navigation-drawer__content {
+  overflow-y: auto !important;
+}
+
+// --- Timeline
+
+.v-timeline--vertical.v-timeline {
+  row-gap: 16px;
+  height: auto !important;
+}
+
+.v-timeline--vertical.v-timeline.v-timeline--side-end .v-timeline-item .v-timeline-item__body {
+  padding-inline-start: 8px !important;
+}
+
+.v-timeline--vertical.v-timeline.v-timeline--side-end .v-timeline-item .v-timeline-item__opposite {
+  padding-inline-end: 8px !important;
+}
